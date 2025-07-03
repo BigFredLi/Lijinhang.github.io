@@ -104,3 +104,17 @@ h3 {
     color: #d9534f; /* 红色高亮 */
     font-weight: bold;
 }
+@media (max-width: 768px) {
+  /* 当屏幕宽度小于768px时，应用以下样式 */
+  .responsive-cell {
+    display: block; /* 将表格单元格变为块级元素，使其可以独占一行 */
+    width: 100% !important; /* 强制宽度为100%，覆盖行内样式 */
+    max-width: 100% !important; /* 同样强制覆盖 */
+    padding: 5% 5% 0 5% !important; /* 调整内边距，避免内容贴边 */
+  }
+  
+  /* 调整照片下方的间距 */
+  .responsive-cell img {
+      margin-bottom: 20px;
+  }
+}
